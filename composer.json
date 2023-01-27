@@ -1,0 +1,14 @@
+{
+  "name": "vendor/scandiweb",
+  "autoload": {
+    "psr-4": {
+      "App\\": "App/"
+    }
+  },
+  "authors": [
+    {
+      "name": "ibrahimelgadid"
+    }
+  ],
+  "require": {}
+}
