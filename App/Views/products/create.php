@@ -6,7 +6,7 @@
 
     <h4 class="text-center my-4">New Product</h4>
 
-    <form action="" method="post">
+    <form action="" method="post" id="product_form">
 
 
       <div class="mb-3">
@@ -23,16 +23,16 @@
       </div>
 
       <div class="mb-3">
-        <input value="<?php echo  $data['price'] ?? "" ?>" type="number" name="price" class="form-control <?php echo !empty($data['price_err']) ? 'is-invalid' : '' ?> " placeholder="price">
+        <input value="<?php echo  $data['price'] ?? "" ?>" type="number" id="price" name="price" class="form-control <?php echo !empty($data['price_err']) ? 'is-invalid' : '' ?> " placeholder="price">
         <span class="invalid-feedback"><?php echo $data['price_err'] ?></span>
       </div>
 
       <div class="mb-3">
-        <select name="type" id="type" class="form-control <?php echo !empty($data['type_err']) ? 'is-invalid' : '' ?> ">
+        <select name="type" id="productType" class="form-control <?php echo !empty($data['type_err']) ? 'is-invalid' : '' ?> ">
           <option value="NOTYPE">TypeSwitcher</option>
-          <option value="BOOK" <?php echo  isset($data['type']) &&  $data['type'] == "BOOK" ? "selected" : "" ?>>BOOK</option>
-          <option value="DVD" <?php echo   isset($data['type']) && $data['type'] == "DVD" ? "selected" : "" ?>>DVD</option>
-          <option value="FURNITURE" <?php echo  isset($data['type']) &&  $data['type'] == "FURNITURE" ? "selected" : "" ?>>FURNITURE</option>
+          <option value="BOOK" <?php echo  isset($data['type']) &&  $data['type'] == "BOOK" ? "selected" : "" ?>>Book</option>
+          <option value="DVD" <?php echo   isset($data['type']) && $data['type'] == "DVD" ? "selected" : "" ?>>DVD-disk</option>
+          <option value="FURNITURE" <?php echo  isset($data['type']) &&  $data['type'] == "FURNITURE" ? "selected" : "" ?>>Furniture</option>
         </select>
         <span class="invalid-feedback"><?php echo $data['type_err'] ?></span>
       </div>
@@ -140,7 +140,7 @@
 
 
       <div class="mb-3">
-        <input type="submit" value="Submit" class="form-control bg-primary text-white">
+        <input type="submit" value="Save" id="Save" class="form-control bg-primary text-white">
       </div>
 
 

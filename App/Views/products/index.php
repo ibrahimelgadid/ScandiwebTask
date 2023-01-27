@@ -8,7 +8,7 @@
       <h2>Product List</h2>
       <div class="btns d-flex gap-2">
 
-        <a href="<?php echo URLROOT ?>/products/create" class="btn  btn-sm btn-outline-primary">Add</a>
+        <a href="<?php echo URLROOT ?>/products/create" class="btn  btn-sm btn-outline-primary">ADD</a>
 
         <form action="<?php echo URLROOT ?>/products/delete" method="post">
           <input type="hidden" class="deletedIDs pointer" value="" name="deletedIDs">

@@ -1,4 +1,4 @@
-let typeSwitcher = document.getElementById("type");
+let typeSwitcher = document.getElementById("productType");
 let $types = Array.from(document.getElementsByTagName("fieldset"));
 typeSwitcher.addEventListener("change", function (e) {
   $types.forEach((type) => {
