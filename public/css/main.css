@@ -1,10 +1,10 @@
-.register form {
+.addProduct form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.register form div {
+.addProduct form div {
   width: 400px;
 }
 
@@ -12,15 +12,9 @@
   flex-basis: 200px;
   flex-shrink: 0;
 }
-.delete-checkbox {
-  top: 3px;
-  left: 3px;
-}
-
-.items div {
-  font-size: 16px;
-  font-weight: 600;
-  color: rgb(102, 102, 102);
+.btns {
+  top: 24px;
+  right: 20px;
 }
 
 .delete-checkbox {

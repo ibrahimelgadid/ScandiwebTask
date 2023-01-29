@@ -13,7 +13,11 @@ class Core
 
   public function __construct()
   {
+
+
     $url = $this->getUrl();
+
+
 
     if (isset($url[0]) && $url[0] != "") {
       if (file_exists("../App/Controllers/" . ucwords($url[0]) . ".php")) {
@@ -35,6 +39,8 @@ class Core
         $this->currentMethod = "notFoundMethod";
       }
     }
+
+
 
     // get parameters
     $this->params = $url ? array_values($url) : [];

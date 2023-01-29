@@ -43,7 +43,7 @@ class FURNITURE extends ProductINF
         'name' => $this->name,
         'price' => $this->price,
         'type' => $this->type,
-        'attribute' => $this->height . "x" . $this->width . 'x' . $this->length,
+        'attribute' => "Dimension: " . $this->height . "x" . $this->width . 'x' . $this->length,
       ];
     }
   }

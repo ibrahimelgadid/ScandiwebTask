@@ -34,7 +34,7 @@ class DVD extends ProductINF
         'name' => $this->name,
         'price' => $this->price,
         'type' => $this->type,
-        'attribute' => $this->size,
+        'attribute' => 'Size: ' . $this->size . ' MB',
       ];
     }
   }

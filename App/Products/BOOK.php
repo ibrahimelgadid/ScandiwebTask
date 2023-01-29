@@ -34,7 +34,7 @@ class Book extends ProductINF
         'name' => $this->name,
         'price' => $this->price,
         'type' => $this->type,
-        'attribute' => $this->weight,
+        'attribute' => 'Weight: ' . $this->weight . ' KG',
       ];
     }
   }

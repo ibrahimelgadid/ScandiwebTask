@@ -47,8 +47,8 @@ class Products extends Controller
 
   public function delete()
   {
-    $products = explode(',', $_POST['deletedIDs']);
-    foreach ($products as $product) {
+
+    foreach ($_POST['sku'] as $product) {
       $this->productModel->deleteSelectedProduct($product);
     }
     Location::redirect('');

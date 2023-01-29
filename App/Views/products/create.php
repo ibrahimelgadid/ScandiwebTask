@@ -1,6 +1,6 @@
 <?php require_once APPROOT . '/Views/inc/header.php' ?>
 
-<div class="register">
+<div class="addProduct">
   <div class="content  ">
 
 
